@@ -1,116 +1,130 @@
-
-
+/*-------------*/
+/*-- Webpage --*/
+/*-------------*/
 
 html,body {
-  /*-- fonts colors that apply to the whole page --*/
+  /* outside border of webpage */
   margin: 0;
   padding: 0;
+  /* primary */
   font-family: sans-serif;
 }
 
-.navbar {
+/*------------*/
+/*-- Navbar --*/
+/*------------*/
 
-  /*-- Header navigation bar color --*/
-  padding: .8rem;
-  background: rgb(0,0,170);
-  position: sticky;
+header{
+ /* navigation bar color */
+ background: rgb(0,0,170);
 }
 
+.navbar {
+  /* navigation bar thickness */
+  padding: .8rem;
+ 
+}
+
+.navbar-brand > img {
+  /* logo size/header height */
+  height: 5rem;
+  width: auto;
+  /* logo margin */
+  margin: -15%;
+}
 
 .navbar-nav li {
-   /*-- Header navigation bar word kerning--*/
+  /* navigation bar kerning */
   padding-right: 10px;
 }
 
 .nav-link {
-   /*-- Header navigation bar font size (only use em) --*/
+  /* navigation bar font size (only use em) */
   font-size: 1.4em;
 }
 
-.nav-link {
-  /*-- Header navigation bar font size (only use em) --*/
- font-size: 1.4em;
-}
-
-
-.navbar-nav > li > .btn:enabled { 
+.navbar-nav > li > .dropdown-menu {
+  /* navigation bar dropdown title font size (only use em) */
   font-size: 1.4em;
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
- }
-
-
-
-
- .navbar-nav > li > .dropdown-menu { 
-  font-size: 1.4em;
+  /* navigation bar dropdown color */
   background: rgb(0,0,170);;
   border-color: transparent;
- }
-
- .navbar-nav > li > .dropdown-menu >.dropdown-item { 
-  font-size: 0.7em;
-
-  color:aliceblue;
- }
-
-
-
-.navbar-brand>img {
-  /*-- Logo size/header height --*/
-  height: 5rem;
-  width: auto;
-  margin: -15%;
 }
 
+.navbar-nav > li > .dropdown-menu >.dropdown-item { 
+  /* navigation bar dropdown item font size (only use em) */
+  font-size: 0.7em;
+  color: white;
+}
+
+/*---------------------*/
+/*-- Carousel (Home) --*/
+/*---------------------*/
+
 .carousel-inner img {
+  /* carousel image size to fit page */
   height: 100%;
   width:100%;
+  /* top and bottom margins reduced by 20% on large screens */
   margin-top: -20%;
 }
 
-.carousel-caption {
-  position: absolute;
-  
-  text-shadow: 1px 1px 10px black;
-  top: 0.2rem;
-  
-}
-.btn-outline-dark{
-  position: absolute;
-  bottom: 0.6rem;
-  transform: translate(-50%, -50%);
-  
-  color:rgb(255,193,29);
-  border-color: rgb(255,193,29);
-  
-}
-.btn-outline-dark:hover {
-  background-image: linear-gradient(rgb(0, 0, 160), rgb(0,0,170));
-  
-}
-
-
-.carousel.pointer-event {
-  touch-action: pan-y pinch-zoom;
-}
-
-
-
-/*-- Media Queries --*/
 @media (max-width: 992px) {
+  /* top and bottom margins reduced by 10% on medium screens */
   .carousel-inner img {
     margin-top: -10%;
   }
+}
 
-  }
 @media (max-width: 768px) {
+  /* top and bottom margins reduced by 0% on small screens */
   .carousel-inner img {
     margin-top: 0%;
   }
+}
 
-  
+.carousel-caption {
+  /* title caption placement */
+  position: absolute;
+  top: 0.2rem;
+  /* title caption font */
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+
+.carousel-inner > .carousel-item > .carousel-caption > .btn-outline-dark{
+  /* carousel button location */
+  position: absolute;
+  bottom: 0.6rem;
+  transform: translate(-50%, -50%);
+  /* carousel button font */
+  color:white;
+  /* carousel button background */
+  background: rgb(0,0,170);
+  border-color: transparent;
+}
+
+.carousel-inner > .carousel-item > .carousel-caption > .btn-outline-dark:hover  {
+  /* carousel button background while hovering*/
+  background:transparent;
+  border-color: rgb(0,0,170);
+}
+
+.carousel.pointer-event {
+  /* allows zoom of images on mobile devices */
+  touch-action: pan-y pinch-zoom;
+}
+
+/*-----------*/
+/*-- Extra --*/
+/*-----------*/
+
+/*-- Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
 }
 @media (max-width: 576px) {
  
