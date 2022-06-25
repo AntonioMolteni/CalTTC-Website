@@ -16,7 +16,8 @@ html,body {
 
 header{
  /* navigation bar color */
- background: rgb(0,0,170);
+ background: rgb(0,0,110);
+
 }
 
 .navbar {
@@ -47,7 +48,7 @@ header{
   /* navigation bar dropdown title font size (only use em) */
   font-size: 1.4em;
   /* navigation bar dropdown color */
-  background: rgb(0,0,170);;
+  background: rgb(11,46,95);;
   border-color: transparent;
 }
 
@@ -100,19 +101,94 @@ header{
   /* carousel button font */
   color:white;
   /* carousel button background */
-  background: rgb(0,0,170);
+  background: rgb(11,46,95);
   border-color: transparent;
 }
 
 .carousel-inner > .carousel-item > .carousel-caption > .btn-outline-dark:hover  {
   /* carousel button background while hovering*/
   background:transparent;
-  border-color: rgb(0,0,170);
+  border-color: rgb(11,46,95);
 }
 
 .carousel.pointer-event {
   /* allows zoom of images on mobile devices */
   touch-action: pan-y pinch-zoom;
+}
+
+/*---------------------*/
+/*-- Jumbotron (home)--*/
+/*---------------------*/
+
+.jumbotron img,
+.jumbotron button {
+  /* image and button centering */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.jumbotron img {
+  /* height of the paddle adjusted for large screens */
+  height: 200px;
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .jumbotron img {
+    /* height of the paddle adjusted for medium screens */
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron img {
+    /* height of the paddle adjusted for small screens */
+    height: 200px;
+    width: auto;
+  }
+}
+
+/*---------------------*/
+/*-- Welcome (home)--*/
+/*---------------------*/
+div.container {
+  text-align: center;
+}
+
+ol.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
+/*-----------*/
+/*-- Footer --*/
+/*-----------*/
+
+.social a {
+  font-size: 4rem;
+  padding: 1rem;
+ 
+}
+
+.fa-facebook {
+  color: #3b5998;
+  height: 4rem;
+  width: 4rem;
+}
+
+.fa-instagram {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+text-align: center;
+border-radius: 0.8rem;
+color: #fff;
+line-height: 250px;
+background: #d6249f;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 /*-----------*/
@@ -122,12 +198,12 @@ header{
 /*-- Media Queries --*/
 @media (max-width: 992px) {
 
-  }
+}
 @media (max-width: 768px) {
 
 }
 @media (max-width: 576px) {
- 
+
 }
 
 
@@ -175,8 +251,6 @@ figure {
 
 
 
-
-
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -193,11 +267,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-

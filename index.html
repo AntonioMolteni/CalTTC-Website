@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title of the webpage that appears on Tabs.-->
 	<title>Cal Table Tennis</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
 	<!-- CSS controls the Look of the website, to change elements style, do it in styles.css -->
 	<!-- bootstrap (for formatting on mobile)-->
 		<!-- original: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
@@ -28,8 +30,9 @@
 </head>
 
 <!-- Website structure based off of this tutorial using bootstrap: 
-	https://www.youtube.com/watch?v=9cKsq14Kfsw-->
+	https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 <body>
+
 <!-- Navigation: The bootstrap navbar allows for better viewing on mobile devices. 
 	I would suggest using: 
 	https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp
@@ -38,26 +41,22 @@
 	navbar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
 	grid: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp
 	Here is a website with some example navbars if you are having issues:
-	https://getbootstrap.com/docs/4.0/examples/navbars/
--->
-<header>
-<nav class="navbar navbar-expand-md navbar-dark sticky-top">
-	<div class="container-fluid">
-		<!-- Logo Image source -->
+	https://getbootstrap.com/docs/4.0/examples/navbars/ -->
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(11,46,95);">
+		<!-- Logo image source -->
 		<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-		<!-- Button to collapse the dropdown menu -->
+		<!-- Button to Collapse the Dropdown Menu -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" 
-		data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-		aria-label="Toggle navigation">
-		<!-- Special way of making the hamburger menu icon -->
+			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<!-- Hamburger Menu Icon -->
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<!-- special format for collapsible navbar using "navbar-collapse" is instead 
-			of just collapse. It's id is the same as the data target of the button -->
+		<!-- Indicates Content that can be Collapsed for Smaller Screens-->
 		<div class="collapse navbar-collapse" id="navbarResponsive"> 
 			<ul class="navbar-nav ml-auto">
-		<!-- Links to the different pages of the site, the page that you are 
-			currently on should contain active in its class-->
+				<!-- Links for the different pages of the site, the page that you are 
+				currently on should contain "active" in its class-->
 
 				<li class="nav-item">
 					<a class="nav-link" href="#">News</a>
@@ -107,7 +106,7 @@
 		</div>
 	</div>
 </nav>
-</header>
+
 
 
 <!--- Image Slider -->
@@ -169,230 +168,206 @@
 <!--- Jumbotron -->
 <div class="container-fluid">
 <div class="row jumbotron">
-	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 col-xl-8">
 		<p class="lead">We are the Cal Table Tennis Club, a student-run sports club in the 
 			University of California, Berkeley. We strive to provide a learning and casual 
 			environment for beginners as well as a competitive setting for advanced players. 
 			Students, faculty, alumni, as well as community members are welcomed to play with us.
-			 If you have any questions feel free to send us an email using the form below or message 
-			 us on Facebook! For our playing hours, please check the Open Rec schedule on our page.</p>
+			If you have any questions feel free message us on 
+			<a href="https://www.facebook.com/groups/calttc/?ref=share" target="_blank" rel="noreferrer noopener">Facebook</a>
+			or
+			<a href="https://www.instagram.com/calttc/?hl=en"target="_blank" rel="noreferrer noopener">Instagram</a>!
+			For our playing hours, please check the 
+			<a href="schedule.html">Schedule</a> 
+			page for open play and training hours in the 
+			<a href="https://recsports.berkeley.edu/facilities/rsf/" target="_blank" rel="noreferrer noopener">RSF</a>.</p>
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-		<button type="button" class="btn btn-outline-secondary btn-lg">Let's get Started!</button>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+		<img src="img/paddle.png"></a>
+		<button type="button" class="btn btn-outline-secondary btn-lg">Training Session Sign-Up Form</button>
 	</div>
 </div>
 </div>
 
-<!--- Welcome Section -->
+<!--- Welcome Section (How to Join) -->
 <div class="container-fluid padding">
 <div class="row welcome text-center">
 	<div class="col-12">
-		<h1 class="display-4">Built with ease.</h1>
-	</div>
-	<hr>
-	<div class="col-12">
-		<p class="lead">Welcome to my Bootstrap 4 website...</p>
-	</div>
-</div>
-</div>
-
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-<div class="row text-center padding" >
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-code"></i>
-		<h3>HTML5</h3>
-		<P> Built with the lates version of HTML, HTML4. </P>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-code"></i>
-		<h3>HTML6</h3>
-		<P> Built with the lates version of HTML, HTML4. </P>
-	</div>
-
-	<div class="col-xs-12 col-sm-12 col-md-4">
-		<i class="fas fa-code"></i>
-		<h3>HTML7</h3>
-		<P> Built with the lates version of HTML, HTML4. </P>
-	</div>
-
-</div>
-<hr class="my-4">
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-lg-6">
-		<h2>If you build it</h2>
-		<p>The columns will automatically stack on top of each other to become more dynamica jdklfsa;fjdklsaj  jdkflsajf j fdkja  jkfdjak jfdka  jk;fd aj kfjdksa </p>
-		<p>The columns will automatically stack on top of each other...</p>
-		<p>The columns will automatically stack on top of each other...</p>
-		<br>
-		<a href="#" class="btn btn-primary">Learn More</a>
-	</div>
-	<div class="col-lg-6">
-		<img src="img/desk.png" class="img-fluid">
-	</div>
-</div>
-</div>
-
-<hr class="my-4">
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
+		<h1 class="display-5">How to Join</h1>
+		<div class="container">
+			<ol class="myUL"> 
+				<li>Attend Open Play or a Training Session (free of charge for the first few sessions) to see if the club is right for you.</li>
+				<li>If you like the club and want to continue playing, you have two options:
+					<ul>
+						<li>
+							Continue coming to Open Play or Training Sessions and simply pay the Drop-In Fee.
+						</li>
+						<li>
+							Become an official member of the club by filling out the Registration Form and paying ues.
+						</li>
+					</ul>
+			</ol>
 		</div>
 	</div>
-</figure>
+</div>
 
-<!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun!
-</button>
-<div id="emoji" class="collapse">
+<!--- Perks -->
+<div class="container-fluid padding">
+<div class="row text-left padding" >
+	<div class="col-xs-12 col-sm-6">
+		<h3>
+			<i class="fa-solid fa-table-tennis-paddle-ball"></i>
+			Professional Coaches
+		</h3>
+		<p> Receive coaching from Competitive Team players, former top-ranked 
+			U.S. players and National Team players.</p>
+	</div>
+
+	<div class="col-xs-12 col-sm-6">
+		<h3>
+			<i class="fas fa-user-group"></i>
+			Social Events
+		</h3>
+		<p>Bimonthly social events, banquets, retreats and more!</p>
+	</div>
+
+	<div class="col-xs-12 col-sm-6">
+		<h3>
+			<i class="fas fa-money-bill-1"></i>
+			Exclusive Offers
+		</h3>
+		<P>In generous partnership with Joola, all CalTTC members receive 30% off all Joola products purchases.</P>
+	</div>
+
+	<div class="col-xs-12 col-sm-6">
+		<h3>
+			<i class="fas fa-medal"></i>
+			Represent Cal
+		</h3>
+		<P>Be proud to represent Cal in NCTTA Regional and National Championships!</P>
+	</div>
+
+</div>
+<hr class="my-4">
+</div>
+
+
+<!--- Executive Officers -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h2>Executive Officers</h2>
+	</div>
+</div>
+
+	<!--- Profile Cards -->
 	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-sm-6 col-md-3">
-				<img class="gif" src="img/gif/panda.gif">
-			</div>
-
-			<div class="col-sm-6 col-md-3">
-				<img class="gif" src="img/gif/poo.gif">
-			</div>
-
-			<div class="col-sm-6 col-md-3">
-				<img class="gif" src="img/gif/unicorn.gif">
-			</div>
-
-			<div class="col-sm-6 col-md-3">
-				<img class="gif" src="img/gif/chicken.gif">
-			</div>
-		</div>
-	</div>
-</div>
-
-  
-<!--- Meet the team -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Meet the Team</h1>
-	</div>
-</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team1.png">
-				<div class="card-body">
-					<h4 class="card-title">John Doe</h4>
-					<p class="card-text">John is an internet entrepreneur with almost 20 years experience</p>
-					<a href="#"	class="btn btn-outline-secondary">See Profile</a>
+		<div class="row padding">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/president.png">
+					<div class="card-body">
+						<h4 class="card-title">Hugo Zhan</h4>
+						<p class="card-text">President</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team2.png">
-				<div class="card-body">
-					<h4 class="card-title">Mary Jo</h4>
-					<p class="card-text">Mary is an internet entrepreneur with almost 20 years experience</p>
-					<a href="#"	class="btn btn-outline-secondary">See Profile</a>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/blank.png">
+					<div class="card-body">
+						<h4 class="card-title">Sam Menefee</h4>
+						<p class="card-text">Vice President</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team3.png">
-				<div class="card-body">
-					<h4 class="card-title">Phil Ho</h4>
-					<p class="card-text">John is an internet entrepreneur with almost 20 years experience</p>
-					<a href="#"	class="btn btn-outline-secondary">See Profile</a>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/blank.png">
+					<div class="card-body">
+						<h4 class="card-title">Zoey Sun</h4>
+						<p class="card-text">FOP Chairman</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
 				</div>
 			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/blank.png">
+					<div class="card-body">
+						<h4 class="card-title">Nathan Lee</h4>
+						<p class="card-text">Coaching Chairman</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/blank.png">
+					<div class="card-body">
+						<h4 class="card-title">Lavanya Maruthapandian</h4>
+						<p class="card-text">Competitive Team Captain</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="img/board/blank.png">
+					<div class="card-body">
+						<h4 class="card-title">Sam Menefee</h4>
+						<p class="card-text">Social Chairman</p>
+						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+			</div>
+
 		</div>
-</div>
-
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-lg-6">
-			<h2>Our Philosophy</h2>
-			<p>The columns will automatically stack on top of each other to become more dynamica jdklfsa;fjdklsaj  jdkflsajf j fdkja  jkfdjak jfdka  jk;fd aj kfjdksa </p>
-			<p>The columns will automatically stack on top of each other...</p>
-			<p>The columns will automatically stack on top of each other...</p>
-			<br>
-			<a href="#" class="btn btn-primary">Learn More</a>
-		</div>
-		<div class="col-lg-6">
-			<img src="img/team3.png" class="img-fluid">
-		</div>
 	</div>
-	</div>
-
-<!--- Connect -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12-">
-		<h2>Connect</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a href="#"><i class="fab fa-facebook"></i></a>
-		<a href="#"><i class="fab fa-twitter"></i></a>
-		<a href="#"><i class="fab fa-google-plus-g"></i>></a>
-		<a href="#"><i class="fab fa-instagram"></i></a>
-		<a href="#"><i class="fab fa-youtube "></i></a>
-	</div>
-</div>
-</div>
-
 
 <!--- Footer -->
 <footer>
 <div class="container-fluid padding">
-<div class="row text-center">
-	<div class="col-md-4">
-		<img src="img/w3newbie.png">
-		<hr class="light">
-		<p>555-555-5555</p>
-		<p>email@gmail.com</p>
-		<p> address</p>
-		<p> City State, 00000</p>
+	<div class="row text-center">
+
+		<!-- Our Hours -->
+		<div class="col-md-6 col-xs-12">
+			<hr class="light">
+			<h5> Our Hours</h5>
+			<hr class="light">
+			<p>Friday: 7pm - 10pm</p>
+			<p>Sunday: 7pm - 10pm</p>	
+		</div>
+
+		<!-- Contact Us -->
+		<div class="col-md-6 col-xs-12 social">
+			<hr class="light">
+			<h5>Contact Us</h5>
+			<hr class="light">
+			<a href="https://www.facebook.com/groups/calttc/?ref=share" 
+			target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com/calttc/?hl=en" 
+			target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+		</div>
+
+		<!-- Copyright & OCF -->
+		<div class="col-12">
+			<hr class="light">
+			<h5>&copy; calttc.berkeley.edu</h5>
+			<a href="https://www.ocf.berkeley.edu"
+			target="_blank" rel="noreferrer noopener">
+				<img src="img/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;">
+			</a>
+		</div>
+
 	</div>
-
-	<div class="col-md-4">
-		<hr class="light">
-		<h5> Our hours</h5>
-		<hr class="light">
-		<p>Monday: 9am- 5pm</p>
-		<p>Tuesday: 9am- 5pm</p>
-		<p>Wednesday: 9am- 5pm</p>
-	</div>
-
-	<div class="col-md-4">
-		<hr class="light">
-		<h5> Our hours</h5>
-		<hr class="light">
-		<p>Monday: 9am- 5pm</p>
-		<p>Tuesday: 9am- 5pm</p>
-		<p>Wednesday: 9am- 5pm</p>
-	</div>
-	
-	<div class="col-12">
-		<hr class="light">
-		<h5>&copy; calttc.berkeley.edu </h5>
-
-	</div>
-
-
-</div>
 </div>
 </footer>
 </body>
