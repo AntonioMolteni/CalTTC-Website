@@ -5,7 +5,7 @@
 html,body {
   /* outside border of webpage */
   margin: 0;
-  padding: 0;
+  padding-top: 40px;
   /* primary */
   font-family: sans-serif;
 }
@@ -14,16 +14,15 @@ html,body {
 /*-- Navbar --*/
 /*------------*/
 
-header{
- /* navigation bar color */
- background: rgb(0,0,110);
-
+a.anchor {
+  display: block;
+  position: relative;
+  top: -6rem; 
 }
 
 .navbar {
   /* navigation bar thickness */
   padding: .8rem;
- 
 }
 
 .navbar-brand > img {
@@ -116,9 +115,9 @@ header{
   touch-action: pan-y pinch-zoom;
 }
 
-/*---------------------*/
-/*-- Jumbotron (home)--*/
-/*---------------------*/
+/*--------------------*/
+/*-- Home Jumbotron --*/
+/*--------------------*/
 
 .jumbotron img,
 .jumbotron button {
@@ -151,16 +150,24 @@ header{
   }
 }
 
-/*---------------------*/
-/*-- Welcome (home)--*/
-/*---------------------*/
-div.container {
+/*----------------------------------*/
+/*-- Welcome Section (How to Join)--*/
+/*----------------------------------*/
+.steps {
   text-align: center;
 }
 
 ol.myUL {
   display: inline-block;
   text-align: left;
+}
+
+/*--------------*/
+/*-- Schedule --*/
+/*--------------*/
+
+.placeholder {
+  width: 100%; 
 }
 
 /*-----------*/
@@ -170,7 +177,6 @@ ol.myUL {
 .social a {
   font-size: 4rem;
   padding: 1rem;
- 
 }
 
 .fa-facebook {
@@ -183,12 +189,12 @@ ol.myUL {
   display: inline-block;
   height: 4rem;
   width: 4rem;
-text-align: center;
-border-radius: 0.8rem;
-color: #fff;
-line-height: 250px;
-background: #d6249f;
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  text-align: center;
+  border-radius: 0.8rem;
+  color: #fff;
+  line-height: 250px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 /*-----------*/
