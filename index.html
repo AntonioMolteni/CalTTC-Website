@@ -51,73 +51,75 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 	Here is a website with some example navbars if you are having issues:
 	https://getbootstrap.com/docs/4.0/examples/navbars/ -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
-		<!-- Logo Image Source(should be a .png) -->
-		<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-		<!-- Button to Collapse the Dropdown Menu -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" 
-			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<!-- Hamburger Menu Icon -->
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<!-- Indicates content that can be collapsed for smaller screens-->
-		<div class="collapse navbar-collapse" id="navbarResponsive"> 
-			<!-- Links for the different pages of the site:
-					the page that you are currently on should contain "active" in its nav-item class
-					each "nav-item" only links to one other html page, the dropdown is there to 
-					provide links to different sections of that page. -->
-			<ul class="navbar-nav ml-auto">
-				<!-- News -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">News</a>
-				</li>
+	<!-- Logo Image Source(should be a .png) -->
+	<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+	<!-- Button to Collapse the Hamburger Navbar Dropdown Menu -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+		aria-label="Toggle navigation">
+		<!-- Hamburger Menu Icon -->
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Indicates content that can be collapsed for smaller screens-->
+	<div class="collapse navbar-collapse" id="navbarResponsive"> 
+		<!-- Links for the different pages of the site:
+				the page that you are currently on should contain "active" in its nav-item class
+				each "nav-item" only links to one other html page, the dropdown is there to 
+				provide links to different sections of that page. -->
+		<ul class="navbar-nav ml-auto">
+			<!-- News -->
+			<li class="nav-item">
+				<a class="nav-link" href="#">News</a>
+			</li>
 
-				<!-- Schedule -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Schedule</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
-						<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
-						<a class="dropdown-item" href="schedule.html#advanced-training">Advanced Training</a>
-						<a class="dropdown-item" href="schedule.html#private-training">Private Training</a>
-						<a class="dropdown-item" href="schedule.html#tournaments">Tournaments</a>
-					</div>
-				</li>
+			<!-- Schedule -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Schedule</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown04">
+					<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
+					<a class="dropdown-item" href="schedule.html#advanced-training">Advanced Training</a>
+					<a class="dropdown-item" href="schedule.html#private-training">Private Training</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="schedule.html#tournaments">Tournaments</a>
+				</div>
+			</li>
 
-				<!-- Membership -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="membership.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Membership</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="membership.html#dues">Dues</a>
-						<a class="dropdown-item" href="membership.html#perks">Perks</a>
-						<a class="dropdown-item" href="membership.html#registration">Registration</a>
-					</div>
-				</li>
+			<!-- Membership -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="membership.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Membership</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown04">
+					<a class="dropdown-item" href="membership.html#perks">Perks</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="membership.html#registration">Registration</a>
+					<a class="dropdown-item" href="membership.html#dues">Dues</a>
+				</div>
+			</li>
 
-				<!-- Fundraising -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="fundraising.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Fundraising</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="fundraising.html#merchandise">Merchandise</a>
-						<a class="dropdown-item" href="fundraising.html#gofundme">GoFundMe</a>
-					</div>
-				</li>
+			<!-- Fundraising -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="fundraising.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Fundraising</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown04">
+					<a class="dropdown-item" href="fundraising.html#merchandise">Merchandise</a>
+					<a class="dropdown-item" href="fundraising.html#gofundme">GoFundMe</a>
+				</div>
+			</li>
 
-				<!-- Board -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="board.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Board</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="board.html#executives">Executives</a>
-						<a class="dropdown-item" href="board.html#officers">Officers</a>
-					</div>
-				</li>
-			
-			</ul>
-		</div>
+			<!-- Board -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="board.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Board</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown04">
+					<a class="dropdown-item" href="board.html#executives">Executives</a>
+					<a class="dropdown-item" href="board.html#officers">Officers</a>
+				</div>
+			</li>
+		
+		</ul>
 	</div>
 </nav>
 
@@ -132,47 +134,29 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 		<li data-target="#slides" data-slide-to="4"></li>
 	</ul>
 
-	<!-- Welcome Images with Buttons -->
+	<!-- Welcome Carousel Images-->
 	<div class="carousel-inner">
-		<!-- News Button -->
 		<div class="carousel-item active">
 			<img src="img/carousel0.png">
 			<div class="carousel-caption">
 				<h1>Cal Table Tennis</h1>
-				<a href="news.html" class="btn btn-outline-dark" role="button">News</a>
 			</div>
 		</div>
 
-		<!-- Schedule Button -->
 		<div class="carousel-item">
 			<img src="img/carousel1.png">
-			<div class="carousel-caption">
-				<a href="schedule.html" class="btn btn-outline-dark" role="button">Schedule</a>
-			</div>
 		</div>
 
-		<!-- Membership Button -->
 		<div class="carousel-item">
 			<img src="img/carousel2.png">
-			<div class="carousel-caption">
-				<a href="membership.html" class="btn btn-outline-dark" role="button">Membership</a>
-			</div>
 		</div>
 
-		<!-- Fundrasing Button -->
 		<div class="carousel-item">
 			<img src="img/carousel3.png">
-			<div class="carousel-caption">
-				<a href="fundrasing.html" class="btn btn-outline-dark" role="button">Fundraising</a>
-			</div>
 		</div>
 
-		<!-- Board Button -->
 		<div class="carousel-item">
 			<img src="img/carousel4.png">
-			<div class="carousel-caption">
-				<a href="board.html" class="btn btn-outline-dark" role="button">Board</a>
-			</div>
 		</div>
 	</div>
 
@@ -210,27 +194,34 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 
 	<!-- Formatting for Different Devices using Bootstrap Columns -->
 	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
-		<img class="paddle" src="img/paddle.png">
+		<img class="paddle" src="img/merchandise/paddle.png">
 		<button type="button" class="btn btn-outline-secondary btn-lg">Training Session Sign-Up Form</button>
 	</div>
 </div>
 </div>
 
-<!--- Welcome Section (How to Join) -->
+<!--- Welcome Section (How to Get Started) -->
 <div class="container-fluid padding">
 <div class="row welcome text-center">
 	<div class="col-12">
-		<h1 class="display-5">How to Join</h1>
+		<h1 class="display-5">How to Get Started</h1>
 		<div class="steps container">
 			<ol class="myUL"> 
 				<li>Attend Open Play or a Training Session (free of charge for the first few sessions) to see if the club is right for you.</li>
 				<li>If you like the club and want to continue playing, you have two options:
 					<ul>
 						<li>
-							Continue coming to Open Play or Training Sessions and simply pay the Drop-In Fee.
+							Continue coming to 
+							<a href="schedule.html#open-play">Open Play</a>
+							or
+							<a href="schedule.html#novice-training">Training Sessions</a> 
+							and simply pay the Drop-In Fee.
 						</li>
 						<li>
-							Become an official member of the club by filling out the Registration Form and paying ues.
+							Become an official member of the club by filling out the 
+							<a href="membership.html#registration">Registration Form</a>
+							and paying 
+							<a href="membership.html#dues">Dues</a>.
 						</li>
 					</ul>
 			</ol>
@@ -260,7 +251,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			<i class="fas fa-user-group"></i>
 			Social Events
 		</h3>
-		<p>Bimonthly social events, banquets, retreats and more!</p>
+		<p>Biweekly social events, banquets, retreats and more!</p>
 	</div>
 
 	<!-- Formatting for Different Devices using Bootstrap Columns -->
@@ -317,7 +308,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			<!-- Formatting for Different Devices using Bootstrap Columns -->
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="card">
-					<img class="card-img-top" src="img/board/blank.png">
+					<img class="card-img-top" src="img/board/vice-president.png">
 					<div class="card-body">
 						<h4 class="card-title">Sam Menefee</h4>
 						<p class="card-text">Vice President</p>
@@ -330,9 +321,9 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			<!-- Formatting for Different Devices using Bootstrap Columns -->
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="card">
-					<img class="card-img-top" src="img/board/blank.png">
+					<img class="card-img-top" src="img/board/fop-chairman.png">
 					<div class="card-body">
-						<h4 class="card-title">Zoey Sun</h4>
+						<h4 class="card-title">Zoey Mengzhu Sun</h4>
 						<p class="card-text">FOP Chairman</p>
 						<!-- <a href="#"	class="btn btn-outline-secondary">See Profile</a> -->
 					</div>
@@ -356,7 +347,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			<!-- Formatting for Different Devices using Bootstrap Columns -->
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="card">
-					<img class="card-img-top" src="img/board/blank.png">
+					<img class="card-img-top" src="img/board/competitive-team-captain.png">
 					<div class="card-body">
 						<h4 class="card-title">Lavanya Maruthapandian</h4>
 						<p class="card-text">Competitive Team Captain</p>
@@ -369,7 +360,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			<!-- Formatting for Different Devices using Bootstrap Columns -->
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="card">
-					<img class="card-img-top" src="img/board/blank.png">
+					<img class="card-img-top" src="img/board/social-chairman.png">
 					<div class="card-body">
 						<h4 class="card-title">Sam Menefee</h4>
 						<p class="card-text">Social Chairman</p>
@@ -398,6 +389,20 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 <script>
 	$(".navbar-collapse .dropdown-item").click(function () {
 		$(".navbar-collapse").collapse("hide");
+	});
+</script>
+
+<!-- Script to allow dropdown menu bars to be clicked only after the dropdown is activated on 
+	Desktop.  Is disabled on mobile to allow the nav-item dropdowns to be collapsed.-->
+<!-- https://github.com/arnabwahid/wordpress-bootstrap/issues/62 -->
+<script>
+	$('.navbar ul.navbar-nav > .dropdown > a[href]').click(function() {
+	    var dropdown = $(this).next('.dropdown-menu');
+	    if ($(dropdown).css('display') !== 'none') {
+	        if (this.href) {
+	            location.href = this.href;
+	        }
+	    }
 	});
 </script>
 

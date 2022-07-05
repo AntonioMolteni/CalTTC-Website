@@ -92,24 +92,6 @@ a.anchor {
   text-shadow: 1px 1px 10px black;
 }
 
-.carousel-inner > .carousel-item > .carousel-caption > .btn-outline-dark{
-  /* carousel button location */
-  position: absolute;
-  bottom: 0.6rem;
-  transform: translate(-50%, -50%);
-  /* carousel button font */
-  color:white;
-  /* carousel button background */
-  background: rgb(11,46,95);
-  border-color: transparent;
-}
-
-.carousel-inner > .carousel-item > .carousel-caption > .btn-outline-dark:hover  {
-  /* carousel button background while hovering*/
-  background:transparent;
-  border-color: rgb(11,46,95);
-}
-
 .carousel.pointer-event {
   /* allows zoom of images on mobile devices */
   touch-action: pan-y pinch-zoom;
@@ -150,9 +132,9 @@ a.anchor {
   }
 }
 
-/*----------------------------------*/
-/*-- Welcome Section (How to Join)--*/
-/*----------------------------------*/
+/*-----------------------------------------*/
+/*-- Welcome Section (How to Get Started)--*/
+/*-----------------------------------------*/
 .steps {
   text-align: center;
 }
@@ -195,6 +177,12 @@ ol.myUL {
   line-height: 250px;
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-discord {
+  color: #7289DA;
+  height: 4rem;
+  width: 4rem;
+  
 }
 
 /*-----------*/
