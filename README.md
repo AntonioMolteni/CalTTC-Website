@@ -1,6 +1,6 @@
 # CalTTC-Website
 
-Website Direction: How to get Started
+Website Directions: How to get Started
 
 1. Clone the old website repository from github to your machine: https://github.com/CalTTC/CalTTCwebpage. (I recommend cloning it to a folder on your desktop.)
 as well as the new website repository: https://github.com/AntonioMolteni/CalTTC-Website
