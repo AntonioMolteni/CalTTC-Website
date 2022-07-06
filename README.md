@@ -15,10 +15,10 @@ Currently, the old website source code from github has a lot of unnecessary bagg
 The old website is website is based off of a template called Airspace by Themefisher.  I suggest you download it by going to https://themefisher.com/products/airspace.  To view this theme in VS Code open the folder titled “airspace-premium” after extracting the contents of the “airspace.zip” file. Although we are not using this template anymore because it is too complex, you can just tool around to see the basic structure. 
 
 If you are having trouble getting started with html.  I would watch the first few videos from this playlist:
-basic html tutorial: https://www.youtube.com/watch?v=gQojMIhELvM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc  
+basic html tutorial: https://www.youtube.com/watch?v=gQojMIhELvM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc    
 If you are having trouble understanding bootstrap I would recommend looking at these links:
-Reference Guide: https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp
-Grid System: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp
-Navigations Bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
-5 min intro: https://www.youtube.com/watch?v=yalxT0PEx8c 
-1hour 30min tutorial: https://www.youtube.com/watch?v=9cKsq14Kfsw 
+Reference Guide: https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp      
+Grid System: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp    
+Navigations Bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp    
+5 min intro: https://www.youtube.com/watch?v=yalxT0PEx8c    
+1hour 30min tutorial: https://www.youtube.com/watch?v=9cKsq14Kfsw    
