@@ -50,77 +50,79 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 
 	Here is a website with some example navbars if you are having issues:
 	https://getbootstrap.com/docs/4.0/examples/navbars/ -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
-	<!-- Logo Image Source(should be a .png) -->
-	<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-	<!-- Button to Collapse the Hamburger Navbar Dropdown Menu -->
-	<button class="navbar-toggler" type="button" data-toggle="collapse" 
-		data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-		aria-label="Toggle navigation">
-		<!-- Hamburger Menu Icon -->
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<!-- Indicates content that can be collapsed for smaller screens-->
-	<div class="collapse navbar-collapse" id="navbarResponsive"> 
-		<!-- Links for the different pages of the site:
-				the page that you are currently on should contain "active" in its nav-item class
-				each "nav-item" only links to one other html page, the dropdown is there to 
-				provide links to different sections of that page. -->
-		<ul class="navbar-nav ml-auto">
-			<!-- News -->
-			<li class="nav-item">
-				<a class="nav-link" href="#">News</a>
-			</li>
-
-			<!-- Schedule -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Schedule</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown04">
-					<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
-					<a class="dropdown-item" href="schedule.html#advanced-training">Advanced Training</a>
-					<a class="dropdown-item" href="schedule.html#private-training">Private Training</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="schedule.html#tournaments">Tournaments</a>
-				</div>
-			</li>
-
-			<!-- Membership -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="membership.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Membership</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown04">
-					<a class="dropdown-item" href="membership.html#perks">Perks</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="membership.html#registration">Registration</a>
-					<a class="dropdown-item" href="membership.html#dues">Dues</a>
-				</div>
-			</li>
-
-			<!-- Fundraising -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="fundraising.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Fundraising</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown04">
-					<a class="dropdown-item" href="fundraising.html#merchandise">Merchandise</a>
-					<a class="dropdown-item" href="fundraising.html#gofundme">GoFundMe</a>
-				</div>
-			</li>
-
-			<!-- Board -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="board.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Board</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown04">
-					<a class="dropdown-item" href="board.html#executives">Executives</a>
-					<a class="dropdown-item" href="board.html#officers">Officers</a>
-				</div>
-			</li>
-		
-		</ul>
-	</div>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
+		<!-- Logo Image Source(should be a .png) -->
+		<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+		<!-- Button to Collapse the Hamburger Navbar Dropdown Menu -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<!-- Hamburger Menu Icon -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Indicates content that can be collapsed for smaller screens-->
+		<div class="collapse navbar-collapse" id="navbarResponsive"> 
+			<!-- Links for the different pages of the site:
+					the page that you are currently on should contain "active" in its nav-item class
+					each "nav-item" only links to one other html page, the dropdown is there to 
+					provide links to different sections of that page. -->
+			<ul class="navbar-nav ml-auto">
+				<!-- News -->
+				<li class="nav-item">
+					<a class="nav-link" href="news.html">News</a>
+				</li>
+	
+				<!-- Schedule -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Schedule</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="schedule.html#calendar">Calendar</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
+						<a class="dropdown-item" href="schedule.html#advanced-training">Advanced Training</a>
+						<a class="dropdown-item" href="schedule.html#private-training">Private Training</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#tournaments">Tournaments</a>
+					</div>
+				</li>
+	
+				<!-- Membership -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="membership.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Membership</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="membership.html#perks">Perks</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="membership.html#registration">Registration</a>
+						<a class="dropdown-item" href="membership.html#dues">Dues</a>
+					</div>
+				</li>
+	
+				<!-- Fundraising -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="fundraising.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Fundraising</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="fundraising.html#merchandise">Merchandise</a>
+						<a class="dropdown-item" href="fundraising.html#gofundme">GoFundMe</a>
+					</div>
+				</li>
+	
+				<!-- Board -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="board.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Board</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="board.html#executives">Executives</a>
+						<a class="dropdown-item" href="board.html#officers">Officers</a>
+					</div>
+				</li>
+			
+			</ul>
+		</div>
 </nav>
 
 <!--- Image Slider -->

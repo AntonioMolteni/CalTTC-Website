@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 
 	Here is a website with some example navbars if you are having issues:
 	https://getbootstrap.com/docs/4.0/examples/navbars/ -->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
 		<!-- Logo Image Source(should be a .png) -->
 		<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
 		<!-- Button to Collapse the Hamburger Navbar Dropdown Menu -->
@@ -77,6 +77,8 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 					<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Schedule</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="schedule.html#calendar">Calendar</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
@@ -121,14 +123,7 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 			
 			</ul>
 		</div>
-	</nav>
-
-<p>
-	<br>
-	Plan to implement some sort of google calendar using sociable kit instead of this "Schedule Table":
-	<br>
-	https://tutorials.sociablekit.com/embed-google-calendar-bootstrap/
-</p>
+</nav>
 
 
 <!-- Schedule Table -->
@@ -170,6 +165,31 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 
 		</div>
 	</div>
+</div>
+<!--- Calendar -->
+<a class="anchor" id="calendar"></a>
+
+<div class="container-fluid padding">
+	<div class="row padding align-items-center">
+		<div class="col-md-6 col-lg-8">
+			<h1><b>Calendar</b></h1>
+		</div>
+	</div>
+</div>
+
+<!-- Responsive google calendar embedding-->
+<!-- https://blog.vendilli.com/google-calendar-responsive -->
+<!-- Bootstrap hidden only on small/visible only on small -->
+<!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
+
+<div class="desktop-view d-none d-lg-block responsive-iframe-container">
+	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showTabs=0&showPrint=0&showTz=0&src=bXJhbnRvbmlvbW9sdGVuaUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+	style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="mobile-view d-lg-none responsive-iframe-container">
+	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showTabs=0&showPrint=0&showTz=0&mode=AGENDA&src=bXJhbnRvbmlvbW9sdGVuaUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+	 style="border-width:0" width="800" height="200" frameborder="0" scrolling="no"></iframe>
 </div>
 
 
@@ -294,7 +314,8 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw -->
 </div>
 
 <!-- Bottom Image -->
-<!-- Required on each page as a spacer between body and footer to solve navbar anchor link issues. -->
+<!-- Required on each page as a spacer between body and footer to solve navbar anchor link issues on larger desktop screens. 
+	An image like this should be on every page -->
 <img class="placeholder" src="img/placeholder-do-not-publish.png">
 
 </body>

@@ -144,10 +144,47 @@ ol.myUL {
   text-align: left;
 }
 
-/*--------------*/
-/*-- Schedule --*/
-/*--------------*/
+/*--------------------------------------*/
+/*-- Schedule (Table/Google Calendar) --*/
+/*--------------------------------------*/
 
+/* Google Calendar */
+/* https://blog.vendilli.com/google-calendar-responsive */
+
+.desktop-view {
+  /* The container around the google calendar.
+  The bottom padding is equal to "height" + "padding (left/right)" (both shown below). */
+  position: relative;
+  padding-bottom: 26.5rem;
+}
+
+.desktop-view iframe{
+  height: 25rem;
+}
+
+.mobile-view {
+  /* The container around the google calendar.
+  The bottom padding is equal to "height" + "padding (left/right)" (both shown below). */
+  position: relative;
+  padding-bottom: 16.5rem;
+}
+.mobile-view iframe {
+  /* The height of the agenda view when viewing on mobile. */
+  height: 15rem;
+}
+
+.responsive-iframe-container iframe{
+  /* The actual google calendar size.  It is responsive because width is set to 100%. */
+  position: absolute;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+/*----------------------------------*/
+/*-- Schedule (Placeholder Image) --*/
+/*----------------------------------*/
 .placeholder {
   width: 100%; 
 }
@@ -156,21 +193,19 @@ ol.myUL {
 /*-- Footer --*/
 /*-----------*/
 
-.social a {
-  font-size: 4rem;
-  padding: 1rem;
+.social a{
+  padding: 2%;
 }
-
+.social .sized{
+height: 4rem;
+width: 4rem;
+}
 .fa-facebook {
   color: #3b5998;
-  height: 4rem;
-  width: 4rem;
 }
 
 .fa-instagram {
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
   text-align: center;
   border-radius: 0.8rem;
   color: #fff;
@@ -178,10 +213,9 @@ ol.myUL {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
+
 .fa-discord {
   color: #7289DA;
-  height: 4rem;
-  width: 4rem;
   
 }
 
