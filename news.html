@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Adjusts the content to the device's width at an initial magnification of 1 times -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title of the webpage that appears on tabs.-->
+	<title>Cal Table Tennis</title>
+	<link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
+
+	<!-- CSS controls the Look of the website, to change elements style, do it in styles.css -->
+	<!-- bootstrap (for formatting on mobile)-->
+		<!-- original: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+		<!-- local file -->
+		<link rel="stylesheet", href="plugins/bootstrap/bootstrap.min.css">
+		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script> -->
+		<!-- local file -->
+		<script type="text/javascript" src="plugins/jquery/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
+		<!-- local file -->
+		<script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+		<!-- fontawesome (for social media icons) -->
+		<!-- original: <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+		<!-- local file -->
+		<script src="plugins/fontawesome/all.js"></script>
+
+	<!-- main CSS (for overall style changes)-->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- If you are unfamiliar with html, bootstrap or css, watch this tutorial as 
+the website structure is loosely based from it:
+https://www.youtube.com/watch?v=9cKsq14Kfsw -->
+
+<body>
+
+<!-- Navigation -->
+
+<!-- The bootstrap navbar allows for better viewing on mobile devices. 
+	I would suggest using the class reference: 
+	https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp
+
+	I would look into the 'navbar' and 'grid systems' as well:
+	navbar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+	grid: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp
+
+	Here is a website with some example navbars if you are having issues:
+	https://getbootstrap.com/docs/4.0/examples/navbars/ -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(11,46,95);">
+		<!-- Logo Image Source(should be a .png) -->
+		<a class="navbar-brand" href="index.html"><img src="img/logo/logo.png"></a>
+		<!-- Button to Collapse the Hamburger Navbar Dropdown Menu -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<!-- Hamburger Menu Icon -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Indicates content that can be collapsed for smaller screens-->
+		<div class="collapse navbar-collapse" id="navbarResponsive"> 
+			<!-- Links for the different pages of the site:
+					the page that you are currently on should contain "active" in its nav-item class
+					each "nav-item" only links to one other html page, the dropdown is there to 
+					provide links to different sections of that page. -->
+			<ul class="navbar-nav ml-auto">
+				<!-- News -->
+				<li class="nav-item active">
+					<a class="nav-link" href="news.html">News</a>
+				</li>
+	
+				<!-- Schedule -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="schedule.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Schedule</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="schedule.html#calendar">Calendar</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#open-play">Open Play</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#novice-training">Novice Training</a>
+						<a class="dropdown-item" href="schedule.html#advanced-training">Advanced Training</a>
+						<a class="dropdown-item" href="schedule.html#private-training">Private Training</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="schedule.html#tournaments">Tournaments</a>
+					</div>
+				</li>
+	
+				<!-- Membership -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="membership.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Membership</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="membership.html#perks">Perks</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="membership.html#registration">Registration</a>
+						<a class="dropdown-item" href="membership.html#dues">Dues</a>
+					</div>
+				</li>
+	
+				<!-- Fundraising -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="fundraising.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Fundraising</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="fundraising.html#merchandise">Merchandise</a>
+						<a class="dropdown-item" href="fundraising.html#gofundme">GoFundMe</a>
+					</div>
+				</li>
+	
+				<!-- Board -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="board.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Board</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="board.html#executives">Executives</a>
+						<a class="dropdown-item" href="board.html#officers">Officers</a>
+					</div>
+				</li>
+			
+			</ul>
+		</div>
+</nav>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="hs3gXOaH"></script>
+
+
+<div class="fb-group" data-href="https://www.facebook.com/groups/calttc" data-width="280" data-show-metadata="false"><blockquote cite="https://www.facebook.com/groups/calttc" class="fb-xfbml-parse-ignore">Cal Table Tennis Club - CalTTC</blockquote></div>
+
+</body>
+</html>

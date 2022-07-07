@@ -61,35 +61,42 @@ a.anchor {
 /*-- Carousel (Home) --*/
 /*---------------------*/
 
-.carousel-inner img {
+.carousel-inner > .carousel-item > img {
   /* carousel image size to fit page */
   height: 100%;
   width:100%;
   /* top and bottom margins reduced by 20% on large screens */
-  margin-top: -20%;
+  margin-top: -15%;
+  margin-bottom: -10%;
 }
+
 
 @media (max-width: 992px) {
   /* top and bottom margins reduced by 10% on medium screens */
-  .carousel-inner img {
+  .carousel-inner > .carousel-item > img {
     margin-top: -10%;
   }
 }
 
 @media (max-width: 768px) {
   /* top and bottom margins reduced by 0% on small screens */
-  .carousel-inner img {
+  .carousel-inner > .carousel-item > img {
     margin-top: 0%;
   }
 }
 
+.carousel-caption > img  {
+  /* carousel image size to fit page */
+  width:80%;
+  height: auto;
+  filter: drop-shadow(1px 1px 1px white)
+  
+}
+
 .carousel-caption {
-  /* title caption placement */
+  /* banner placement */
   position: absolute;
-  top: 0.2rem;
-  /* title caption font */
-  color: white;
-  text-shadow: 1px 1px 10px black;
+  top: 0.5rem;;
 }
 
 .carousel.pointer-event {
@@ -97,6 +104,9 @@ a.anchor {
   touch-action: pan-y pinch-zoom;
 }
 
+.fb-page {
+  width: 100%;
+}
 /*--------------------*/
 /*-- Home Jumbotron --*/
 /*--------------------*/
