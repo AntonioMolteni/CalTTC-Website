@@ -54,7 +54,7 @@ a.anchor {
 .navbar-nav > li > .dropdown-menu >.dropdown-item { 
   /* navigation bar dropdown item font size (only use em) */
   font-size: 0.7em;
-  color: white;
+  color: #fff;
 }
 
 /*---------------------*/
@@ -69,7 +69,6 @@ a.anchor {
   margin-top: -15%;
   margin-bottom: -10%;
 }
-
 
 @media (max-width: 992px) {
   /* top and bottom margins reduced by 10% on medium screens */
@@ -89,7 +88,7 @@ a.anchor {
   /* carousel image size to fit page */
   width:80%;
   height: auto;
-  filter: drop-shadow(1px 1px 1px white)
+  filter: drop-shadow(1px 1px 1px #fff)
 }
 
 .carousel-caption {
@@ -106,6 +105,7 @@ a.anchor {
 .fb-page {
   width: 100%;
 }
+
 /*--------------------*/
 /*-- Home Jumbotron --*/
 /*--------------------*/
@@ -194,6 +194,7 @@ ol.myUL {
 /*----------------------------------*/
 /*-- Schedule (Placeholder Image) --*/
 /*----------------------------------*/
+
 .placeholder {
   width: 100%; 
 }
@@ -202,13 +203,38 @@ ol.myUL {
 /*-- Footer --*/
 /*-----------*/
 
-.social a{
-  padding: 2%;
+.social a {
+  padding: 4%;
 }
 
-.social .sized{
+.social .sized {
   height: 4rem;
   width: 4rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  /* size reduced to 4rem on medium screens */
+  .social .sized {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* size reduced to 5rem on small screens */
+  .social .sized {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* size reduced to 5rem on extra small screens */
+  .social .sized {
+    height: 4.68rem;
+    width: 4.68rem;
+  }
 }
 
 .fa-facebook {
@@ -226,8 +252,11 @@ ol.myUL {
 }
 
 .fa-discord {
-  color: #7289DA;
-  
+  color: #7289dA;
+}
+
+.fa-youtube {
+  color: #ff0000;
 }
 
 /*-----------*/
@@ -245,7 +274,6 @@ ol.myUL {
 
 }
 
-
 /*-- Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -254,6 +282,7 @@ ol.myUL {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
@@ -261,6 +290,7 @@ figure {
   height: 60%;
   margin: 0!important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -269,6 +299,7 @@ figure {
   width: 100%;
   height: 100%;
 }
+
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;
@@ -283,12 +314,11 @@ figure {
           transform: translateZ(0);
   will-change: transform;
 }
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
 }
-
-
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
