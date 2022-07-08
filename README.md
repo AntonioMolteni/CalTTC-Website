@@ -1,8 +1,8 @@
 # CalTTC-Website
 
-Website Directions: How to get Started
+## Website Directions: How to get Started
 
-1. Clone the old website repository from github to your machine: https://github.com/CalTTC/CalTTCwebpage. (I recommend cloning it to a folder on your desktop.)
+1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the old website repository from github to your machine: https://github.com/CalTTC/CalTTCwebpage. (I recommend cloning it to a folder on your desktop.)
 as well as the new website repository: https://github.com/AntonioMolteni/CalTTC-Website
 2. Download Visual Studio Code (VS Code) and get the extensions called “Live Server” and “HTML CSS Support”. Importantly, RESTART VS Code afterwards.
 3. Locate a folder called “_site” in the old repository you cloned and open this in VS Code. This is the old website folder.  The new website folder is just repository you already cloned: "CalTTC-Website"
@@ -15,10 +15,19 @@ Currently, the old website source code from github has a lot of unnecessary bagg
 The old website is website is based off of a template called Airspace by Themefisher.  I suggest you download it by going to https://themefisher.com/products/airspace.  To view this theme in VS Code open the folder titled “airspace-premium” after extracting the contents of the “airspace.zip” file. Although we are not using this template anymore because it is too complex, you can just tool around to see the basic structure. 
 
 If you are having trouble getting started with HTML.  I would watch the first few videos from this playlist:    
-Basic HTML Tutorial: https://www.youtube.com/watch?v=gQojMIhELvM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc    
+[Basic HTML Tutorial] (https://www.youtube.com/watch?v=gQojMIhELvM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc)    
 If you are having trouble understanding bootstrap I would recommend looking at these links:    
-Reference Guide: https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp      
-Grid System: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp    
-Navigations Bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp    
-5 min intro: https://www.youtube.com/watch?v=yalxT0PEx8c    
-1hour 30min tutorial: https://www.youtube.com/watch?v=9cKsq14Kfsw    
+[Reference Guide](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)      
+[Grid System](https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp)    
+[Navigation Bar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)    
+[5 min intro](https://www.youtube.com/watch?v=yalxT0PEx8c)    
+[1hour 30min tutorial](https://www.youtube.com/watch?v=9cKsq14Kfsw)  
+
+
+## GitHub Contributor Push Protocol:
+
+1. If you haven't already, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the new website repository to your computer.
+2. Using your terminal, [cd and ls](https://tutorials.codebar.io/command-line/introduction/tutorial.html) into the new website repository: `cd CalTTC-Website`
+3. Once in the directory that contains the hidden .git file (making it a repository), you have two options:
+Markup : * create a new branch using the `git branch [yourbranchname]` command and `git checkout -b [yourbranchname]`.
+	* 
