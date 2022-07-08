@@ -16,18 +16,39 @@ The old website is website is based off of a template called Airspace by Themefi
 
 If you are having trouble getting started with HTML.  I would watch the first few videos from this playlist:    
 [Basic HTML Tutorial] (https://www.youtube.com/watch?v=gQojMIhELvM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc)    
-If you are having trouble understanding bootstrap I would recommend looking at these links:    
-[Reference Guide](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)      
-[Grid System](https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp)    
-[Navigation Bar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)    
-[5 min intro](https://www.youtube.com/watch?v=yalxT0PEx8c)    
-[1hour 30min tutorial](https://www.youtube.com/watch?v=9cKsq14Kfsw)  
+If you are having trouble understanding bootstrap I would recommend looking at these links:  
+Markup :  
+* [Reference Guide](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)      
+* [Grid System](https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp)    
+* [Navigation Bar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)    
+* [5 min intro](https://www.youtube.com/watch?v=yalxT0PEx8c)    
+* [1hour 30min tutorial](https://www.youtube.com/watch?v=9cKsq14Kfsw)  
 
 
-## GitHub Contributor Push Protocol:
+## Contributor Push Protocol:
 
-1. If you haven't already, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the new website repository to your computer.
+It is important to push to the repository properly so that there aren't any merge conflicts.
+
+
+
+1. If you already have a copy of the repo on your local machine, skip to step 2. If you haven't already, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the new website repository to your computer.
 2. Using your terminal, [cd and ls](https://tutorials.codebar.io/command-line/introduction/tutorial.html) into the new website repository: `cd CalTTC-Website`
-3. Once in the directory that contains the hidden .git file (making it a repository), you have two options:
-Markup : * create a new branch using the `git branch [yourbranchname]` command and `git checkout -b [yourbranchname]`.
-	* 
+3. Before you start changing code, always make sure that you have the latest github remote repository by using: `git pull`    
+* If you forgot this step, no big deal, as long as you are not simultaneously editting the same code as another contributor there will be no issue. 
+4. Now we will create a new branch using either:
+Markup :
+  * the `git branch [yourbranchname]` command and `git checkout -b [yourbranchname]`
+	* or just the `git checkout -b [yourbranchname]`
+You are now in a new branch.  You can go back to the main branch by running `git checkout master` or `git checkout main`
+5. Now you can go into VS Code and start working on your new branch. 
+6. (Optional) After you have made your changes, you can run the `git status` terminal command in your local repository to see the files you have changed.
+7. Now you need to stage the files you modified for commit or in other words _add_ the files to be commited. You can stage or _add files two ways:
+Markup: 
+* stage individual files by doing `git add [yourfilename]`
+* stage all of the files you changed by doing `git add .` or `git add -A`
+8. Now that all of your changed files are stages, we can commit which basically creates a backup of your files.  This allows us to restore this _commit_ later if we wish to.  Commit by running `git commit -m "[yourcommitmessage]"`
+9. After the changes are committed, we can upload our local repository to the remote github repository.  This can be done using `git push`.  There is a possibility that you may have to do `git push --set-upstream origin [yourbranchname]` if it is your first time pushing.
+10. Now your terminal will give you some instructions to do a pull request on `https://github.com/CalTableTennis/CalTTC-Website/pull/new/[yourbranchname]`.  Once on the [CalTTC-Website Github Page](https://github.com/CalTableTennis/CalTTC-Website), you will see a green button that says __compare & pull request__.  Click this.
+11. Write a brief description of the changes you made in the __write__ tab so that other contributors know what you did.
+12. Wait until someone else leaves a comment approving the change or if required make the changes others require. 
+13. Once there is approval you can merge the branch using the __merge__ function or the __squash and merge__ function if you want to delete the branch afterward. 
