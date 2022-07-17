@@ -24,14 +24,14 @@ If you are having trouble understanding bootstrap I would recommend looking at t
 * [1hour 30min Tutorial](https://www.youtube.com/watch?v=9cKsq14Kfsw)  
 
 
-## Contributor Push Protocol:
+## Collaborator Push Protocol:
 
 It is important to push to the repository properly to avoid merge conflicts.
 
 1. If you already have a copy of the repo on your local machine, skip to step 2. If you haven't already, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the new website repository to your computer.
 2. Using your terminal, [cd and ls](https://tutorials.codebar.io/command-line/introduction/tutorial.html) into the new website repository: `cd CalTTC-Website`
 3. Before you start changing code, always make sure that you have the latest github remote repository by using `git pull`.
-* If you forgot this step, no big deal, as long as you are not simultaneously editting the same code as another contributor there will be no issue if you plan to merge this code back into the main branch.
+* If you forgot this step, no big deal, as long as you are not simultaneously editting the same code as another collaborator there will be no issue if you plan to merge this code back into the main branch.
 4. Now we will create a new branch using either:
 * the `git checkout -b [yourbranchname]`.
 * or the more complex `git branch [yourbranchname]` command and `git checkout -b [yourbranchname]`
@@ -43,10 +43,10 @@ You are now in a new branch.  You can go back to the main branch by running `git
 * stage all of the files you changed by doing `git add .` or `git add -A`.    
 8. Now that all of your changed files are staged, we can commit (basically saves the changes that you have made).  This allows us to restore this _commit_ later if we wish to.  Come up with a commit message that is relatively short and describes the changes that you have made.  Commit by running `git commit -m "[yourcommitmessage]"`. 
 9. After the changes are committed, we can upload our local repository to the remote github repository.  This can be done using `git push`.
-* You must be a __Contributor__ on the CalTTC github page to do this step.  
+* You must be a __Collaborator__ on the CalTTC github page to do this step.  
 * There is a possibility that you may have to do `git push --set-upstream origin [yourbranchname]` if it is your first time pushing.
 10. Now your terminal will give you some instructions to do a pull request on `https://github.com/CalTableTennis/CalTTC-Website/pull/new/[yourbranchname]`.    
 Once on the [CalTTC-Website Github Page](https://github.com/CalTableTennis/CalTTC-Website), you will see a green button that says __compare & pull request__.  Click this.
-11. Write a brief description of the changes you made in the __write__ tab so that other contributors know what you did.
+11. Write a brief description of the changes you made in the __write__ tab so that other collaborators know what you did.
 12. Wait until someone else leaves a comment approving the change and the __approve__ your pull request.  If required make the changes others require. 
 13. Once there is approval you can merge the branch using the __merge__ function or the __squash and merge__ function if you want to delete the branch afterward. 
