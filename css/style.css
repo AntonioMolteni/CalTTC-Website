@@ -144,6 +144,7 @@ a.anchor {
 /*-----------------------------------------*/
 /*-- Welcome Section (How to Get Started)--*/
 /*-----------------------------------------*/
+
 .steps {
   text-align: center;
 }
@@ -151,6 +152,13 @@ a.anchor {
 ol.myUL {
   display: inline-block;
   text-align: left;
+} 
+/*----------*/
+/*-- News --*/
+/*----------*/
+
+.post iframe {
+  max-width:18rem;
 }
 
 /*--------------------------------------*/
@@ -215,10 +223,9 @@ ol.myUL {
 }
 
 .social .sized {
-  height: 3rem;
-  width: 3rem;
+  height: 2.4rem;
+  width: 2.4rem;
 }
-
 
 .fa-facebook {
   color: #3b5998;
