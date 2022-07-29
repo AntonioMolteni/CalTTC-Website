@@ -1,4 +1,5 @@
 # CalTTC-Website
+![Telnyx](img/banner-logo/banner-logo.png)
 
 ## Website Directions: How to get Started
 
