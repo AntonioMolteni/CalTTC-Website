@@ -2,12 +2,34 @@
 /*-- Webpage --*/
 /*-------------*/
 
-html,body {
+html,
+body {
   /* outside border of webpage */
   margin: 0;
   padding-top: 40px;
   /* primary */
   font-family: sans-serif;
+  background-color: rgb(11, 46, 95);
+}
+
+.row {
+  background-color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.jumbo {
+  background-color: #e9ecef;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .jumbo {
+    padding: 1rem 1rem 1rem 1rem;
+  }
 }
 
 /*------------*/
@@ -17,7 +39,7 @@ html,body {
 a.anchor {
   display: block;
   position: relative;
-  top: -6rem; 
+  top: -6rem;
 }
 
 .navbar {
@@ -25,7 +47,7 @@ a.anchor {
   padding: .8rem;
 }
 
-.navbar-brand > img {
+.navbar-brand>img {
   /* logo size/header height */
   height: 5rem;
   width: auto;
@@ -43,15 +65,16 @@ a.anchor {
   font-size: 1.4em;
 }
 
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav>li>.dropdown-menu {
   /* navigation bar dropdown title font size (only use em) */
   font-size: 1.4em;
   /* navigation bar dropdown color */
-  background: rgb(11,46,95);;
+  background: rgb(11, 46, 95);
+  ;
   border-color: transparent;
 }
 
-.navbar-nav > li > .dropdown-menu >.dropdown-item { 
+.navbar-nav>li>.dropdown-menu>.dropdown-item {
   /* navigation bar dropdown item font size (only use em) */
   font-size: 0.7em;
   color: #fff;
@@ -61,32 +84,34 @@ a.anchor {
 /*-- Carousel (Home) --*/
 /*---------------------*/
 
-.carousel-inner > .carousel-item > img {
+.carousel-inner>.carousel-item>img {
   /* carousel image size to fit page */
   height: 100%;
-  width:100%;
+  width: 100%;
   /* top and bottom margins reduced by 20% on large screens */
   margin-top: -15%;
   margin-bottom: -10%;
 }
 
 @media (max-width: 992px) {
+
   /* top and bottom margins reduced by 10% on medium screens */
-  .carousel-inner > .carousel-item > img {
+  .carousel-inner>.carousel-item>img {
     margin-top: -10%;
   }
 }
 
 @media (max-width: 768px) {
+
   /* top and bottom margins reduced by 0% on small screens */
-  .carousel-inner > .carousel-item > img {
+  .carousel-inner>.carousel-item>img {
     margin-top: 0%;
   }
 }
 
-.carousel-caption > img  {
+.carousel-caption>img {
   /* carousel image size to fit page */
-  width:80%;
+  width: 80%;
   height: auto;
   filter: drop-shadow(1px 1px 1px #fff)
 }
@@ -94,7 +119,8 @@ a.anchor {
 .carousel-caption {
   /* banner placement */
   position: absolute;
-  top: 0.5rem;;
+  top: 0.5rem;
+  ;
 }
 
 .carousel.pointer-event {
@@ -106,27 +132,24 @@ a.anchor {
   width: 100%;
 }
 
-/*--------------------*/
-/*-- Home Jumbotron --*/
-/*--------------------*/
+/*--------------*/
+/*-- About Us --*/
+/*--------------*/
 
-.jumbotron img,
-.jumbotron button {
-  /* image and button centering */
+
+.paddle {
+  /* image centering */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-.jumbotron img {
   /* height of the paddle adjusted for large screens */
   height: 200px;
   width: auto;
 }
 
 @media (max-width: 992px) {
-  .jumbotron img {
+  .paddle {
     /* height of the paddle adjusted for medium screens */
     height: 300px;
     width: auto;
@@ -134,31 +157,20 @@ a.anchor {
 }
 
 @media (max-width: 768px) {
-  .jumbotron img {
+  .paddle {
     /* height of the paddle adjusted for small screens */
     height: 200px;
     width: auto;
   }
 }
 
-/*-----------------------------------------*/
-/*-- Welcome Section (How to Get Started)--*/
-/*-----------------------------------------*/
 
-.steps {
-  text-align: center;
-}
-
-ol.myUL {
-  display: inline-block;
-  text-align: left;
-} 
 /*----------*/
 /*-- News --*/
 /*----------*/
 
 .post iframe {
-  max-width:18rem;  
+  max-width: 18rem;
 }
 
 /*--------------------------------------*/
@@ -168,43 +180,35 @@ ol.myUL {
 /* Google Calendar */
 /* https://blog.vendilli.com/google-calendar-responsive */
 
-.desktop-view {
-  /* The container around the google calendar.
-  The bottom padding is equal to "height" + "padding (left/right)" (both shown below). */
-  position: relative;
-  padding-bottom: 26.5rem;
+.calendar{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
-
-.desktop-view iframe{
-  height: 25rem;
-}
-
+.desktop-view 
 .mobile-view {
   /* The container around the google calendar.
   The bottom padding is equal to "height" + "padding (left/right)" (both shown below). */
   position: relative;
-  padding-bottom: 16.5rem;
+}
+
+.desktop-view iframe {
+  height: 25rem;
+  width: 100%;
 }
 
 .mobile-view iframe {
   /* The height of the agenda view when viewing on mobile. */
   height: 15rem;
+  width: 100%;
 }
 
-.responsive-iframe-container iframe{
-  /* The actual google calendar size.  It is responsive because width is set to 100%. */
-  position: absolute;
-  width: 100%;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 
 /*----------------------------------*/
 /*-- Schedule (Placeholder Image) --*/
 /*----------------------------------*/
 
 .placeholder {
-  width: 100%; 
+  width: 100%;
 }
 
 /*-----------*/
@@ -212,7 +216,7 @@ ol.myUL {
 /*-----------*/
 .card {
   border: transparent;
-  background-color:transparent
+  background-color: transparent
 }
 
 /*-----------*/
@@ -239,7 +243,7 @@ ol.myUL {
   color: #fff;
   line-height: 250px;
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .fa-discord {
@@ -251,7 +255,7 @@ ol.myUL {
 }
 
 .horizontalrule {
-  background-color:#000;
+  background-color: #000;
 }
 
 /*-----------*/
@@ -259,26 +263,28 @@ ol.myUL {
 /*-----------*/
 
 /*-- Media Queries --*/
-@media (max-width: 992px) {
+@media (max-width: 992px) {}
 
-}
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
-@media (max-width: 576px) {
+@media (max-width: 576px) {}
 
-}
 /*-- Dark-Mode --*/
 @media (prefers-color-scheme: dark) {
+
   /* [4] CSS for supported browsers where the user wants a dark theme */
-  html,body {
+  html,
+  body {
     /* outside border of webpage */
-    background:rgb(23, 23, 23);
-    color: #fff
+    color: #fff;
   }
 
-  .jumbotron {
-    background-color:black;
+  .row {
+    background-color: rgb(23, 23, 23);
+  }
+
+  .jumbo {
+    background-color: black;
   }
 
   .table {
@@ -286,7 +292,12 @@ ol.myUL {
   }
 
   .horizontalrule {
-    background-color:#fff;
+    background-color: #fff;
+  }
+
+  .fa-instagram {
+
+    color: rgb(23, 23, 23);
   }
 }
 
@@ -304,7 +315,7 @@ figure {
   position: relative;
   width: 100%;
   height: 60%;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .fixed-wrap {
@@ -327,13 +338,13 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
 
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /*--- Bootstrap 5 Column Division ---*/
@@ -341,34 +352,37 @@ figure {
 .col-sm-15,
 .col-md-15,
 .col-lg-15 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 
 .col-xs-15 {
+  max-width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
     max-width: 20%;
     float: left;
+  }
 }
-@media (min-width: 768px) {
-.col-sm-15 {
-        max-width: 20%;
-        float: left;
-    }
-}
+
 @media (min-width: 992px) {
-    .col-md-15 {
-        max-width: 20%;
-        float: left;
-    }
+  .col-md-15 {
+    max-width: 20%;
+    float: left;
+  }
 }
+
 @media (min-width: 1200px) {
-    .col-lg-15 {
-        max-width: 20%;
-        float: left;
-    }
+  .col-lg-15 {
+    max-width: 20%;
+    float: left;
+  }
 }
 
 /*
