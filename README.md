@@ -1,5 +1,6 @@
 # CalTTC-Website
 ![Telnyx](img/banner-logo/banner-logo.png)
+This is the static version of the CalTTC website.
 
 ## Website Directions: How to get Started
 
@@ -23,7 +24,6 @@ If you are having trouble understanding bootstrap I would recommend looking at t
 * [Navigation Bar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)    
 * [5 min Intro](https://www.youtube.com/watch?v=yalxT0PEx8c)    
 * [1hour 30min Tutorial](https://www.youtube.com/watch?v=9cKsq14Kfsw)  
-
 
 ## Collaborator Push Protocol:
 
@@ -51,3 +51,13 @@ Once on the [CalTTC-Website Github Page](https://github.com/CalTableTennis/CalTT
 11. Write a brief description of the changes you made in the __write__ tab so that other collaborators know what you did.
 12. Wait until someone else leaves a comment approving the change and the __approve__ your pull request.  If required make the changes others require. 
 13. Once there is approval you can merge the branch using the __merge__ function or the __squash and merge__ function if you want to delete the branch afterward. 
+
+## Copying to the berkeley.edu domain:
+1. To upload the github to the actual hosting domain, calttc.berkeley.edu, you need to go to your terminal and `ssh username@ssh.ocf.berkeley.edu` using the calttc credentials. You can upload the files with terminal commands although this can be tricky.
+2. If you don't want to type in your password every time and just drag and drop to update the website, you should use a graphical interface with:
+* Protocol: SFTP (or SSH)
+* Host name: ssh.ocf.berkeley.edu 
+* Port: 22
+3. For this version of the website (static html and css) it is easy to just copy and paste the contents of the root directory into the `public_html` directory. After that the changes should be live
+
+Visit the [Remote Shell and File Transfers](https://www.ocf.berkeley.edu/docs/services/shell/) page at the OCF website for more information regarding file uploads.
